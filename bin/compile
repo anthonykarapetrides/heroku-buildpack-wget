@@ -25,8 +25,8 @@ export PATH=/sbin:/usr/sbin:$PATH:$CACHE_DIR/.tools/wget/bin
 
 echo "-----> Fetching and installing wget"
 cd $WGET_BUILD
-curl -O http://ftp.gnu.org/gnu/wget/wget-1.16.3.tar.bz2
-tar jxvf wget-1.16.3.tar.bz2
+curl -O http://ftp.gnu.org/gnu/wget/wget-1.16.3.tar.gz
+tar xvzf wget-1.16.3.tar.gz
 cd wget-1.16.3
 ./configure --prefix=$CACHE_DIR/.tools/wget --without-ssl
 make
