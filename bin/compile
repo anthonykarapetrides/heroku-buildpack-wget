@@ -28,7 +28,7 @@ cd $WGET_BUILD
 curl -O http://ftp.gnu.org/gnu/wget/wget-1.16.1.tar.gz
 tar xvzf wget-1.16.1.tar.gz
 cd wget-1.16.1
-./configure --prefix=$CACHE_DIR/.tools/wget --without-ssl
+./configure --prefix=$CACHE_DIR/.tools/wget --with-ssl
 make
 make install
 echo "wget installed" | indent
